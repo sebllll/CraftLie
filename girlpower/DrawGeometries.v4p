@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\vvvv\PROJECTS\2017\03_CraftLie\CraftLie\girlpower\DrawGeometries.v4p" systemname="DrawGeometries" filename="C:\vvvv\PROJECTS\2017\03_FactLire\demo patch\DrawGeometries.v4p">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.2_x64\packs\CraftLie\girlpower\DrawGeometries.v4p" systemname="DrawGeometries" filename="C:\vvvv\PROJECTS\2017\03_FactLire\demo patch\DrawGeometries.v4p" scrollx="15" scrolly="0">
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1230" top="5130" width="100" height="100">
    </BOUNDS>
@@ -9,7 +9,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Integral (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Integral (Spreads)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="4515" top="5445" width="100" height="100">
+   <BOUNDS type="Node" left="4560" top="5595" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="10096">
    </PIN>
@@ -17,7 +17,7 @@
    </PIN>
    </NODE>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="4515" top="6060" width="100" height="100">
+   <BOUNDS type="Node" left="4560" top="6210" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -29,11 +29,11 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1485" top="4500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="NoCullSimple">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="FrontCullSimple">
    </PIN>
    </NODE>
    <NODE systemname="Integral (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Integral (Spreads)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="5820" top="5490" width="100" height="100">
+   <BOUNDS type="Node" left="5865" top="5655" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="10096">
    </PIN>
@@ -41,7 +41,7 @@
    </PIN>
    </NODE>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="5820" top="6105" width="100" height="100">
+   <BOUNDS type="Node" left="5865" top="6270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="5355" top="3705" width="100" height="100">
+   <BOUNDS type="Node" left="5745" top="3765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="||">
    </PIN>
@@ -89,7 +89,7 @@
    <PACK Name="dx11" Version="33.0">
    </PACK>
    <NODE systemname="Switch (DX11.Texture 2d)" nodename="Switch (DX11.Texture 2d)" componentmode="Hidden" id="38" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
-   <BOUNDS type="Node" left="4860" top="4125" width="100" height="100">
+   <BOUNDS type="Node" left="5250" top="4185" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -99,7 +99,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Exists (File)" nodename="Exists (File)" componentmode="Hidden" id="39">
-   <BOUNDS type="Node" left="4845" top="3015" width="100" height="100">
+   <BOUNDS type="Node" left="5250" top="3015" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="||">
    </PIN>
@@ -110,28 +110,6 @@
    </LINK>
    <LINK srcnodeid="34" srcpinname="Texture Out" dstnodeid="38" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="40">
-   <BOUNDS type="Node" left="6435" top="10425" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6435" top="10425" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="11790" top="10605" width="16710" height="5085">
-   </BOUNDS>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41">
-   <BOUNDS type="Box" left="7260" top="3360" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7260" top="3360" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Y Input Value">
-   </PIN>
-   </NODE>
    <NODE id="36" systemname="GetGeometries (DX11.Buffer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.CraftLie.dll" nodename="GetGeometries (DX11.Buffer)" componentmode="Hidden">
    <BOUNDS type="Node" left="3150" top="2280" width="7020" height="270">
    </BOUNDS>
@@ -147,12 +125,12 @@
    </PIN>
    <PIN pinname="Instance Counts" visible="1">
    </PIN>
+   <PIN pinname="Buffer Drawer" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Is Valid" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Transform Counts" dstnodeid="41" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="36" srcpinname="Texture Path" dstnodeid="39" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="36" dstpinname="Buffer Drawer">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Texture Path" dstnodeid="34" dstpinname="Filename">
    </LINK>
@@ -165,7 +143,7 @@
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Blend">
+   <PIN pinname="Mode" slicecount="1" values="Add">
    </PIN>
    </NODE>
    <LINK srcnodeid="42" srcpinname="Render State" dstnodeid="6" dstpinname="Render State">
@@ -227,5 +205,41 @@
    <LINK srcnodeid="36" srcpinname="Transform Buffer" dstnodeid="23" dstpinname="sbWorld">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Geometry Out" dstnodeid="23" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="36" dstpinname="Buffer Drawer">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="23" dstpinname="texture2d">
+   </LINK>
+   <NODE id="41" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7455" top="3075" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7455" top="3075" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Transform Counts" dstnodeid="41" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="9690" top="3195" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9690" top="3195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Is Valid" dstnodeid="47" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

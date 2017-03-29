@@ -1023,7 +1023,7 @@
               <Pin Id="OcqxT7KejdkLFtI7Iue9Zq" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="ELM3uuBjLUFPRFm91Wn1wX" Bounds="276,776" />
-            <Node Bounds="422,477,125,22" Id="F3NvT3JAdLzLFP4DfO6jXT">
+            <Node Bounds="422,477,351,22" Id="F3NvT3JAdLzLFP4DfO6jXT">
               <p:NodeReference LastCategoryFullName="CraftLie.BufferGeometry" LastSymbolSource="CraftLie.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
